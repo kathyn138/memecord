@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memecord</title>
+    <link rel="icon" href="favicon.png"/>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <div class="container-fluid body">
+
+        <div class="row justify-content-center">
+
+            <div class="col-sm-5">
+              <form class="lovely-form" novalidate>
+                <h1>Welcome!</h1>
+                <h2>We're so excited to see your meme!</h2>
+                            
+                <div class="form-group col-12">
+                  <label for="validationCustom03" id="inputNeeded"><strong>IMAGE URL</strong></label>
+                  <input type="url" class="form-control" id="imageLink" required>
+                  <div class="invalid-feedback">
+                    - This field is required
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                   <label for="toptext"><strong>TOP TEXT</strong></label>
+                   <input type="text" class="form-input" id="topText">
+                </div>
+                <div class="form-group col-12">
+                  <label for="bottext"><strong>BOTTOM TEXT</strong></label>
+                  <input type="text" class="form-input" id="botText">
+                </div>
+                <button type="submit" class="button">Submit</button>
+              </form>
+              </div>
+        </div>
+
+
+      <div class="row justify-content-center" id="memeSection">
+        <div class="col-sm-11">
+        </div>
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
